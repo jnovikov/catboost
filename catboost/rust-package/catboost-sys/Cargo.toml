@@ -4,6 +4,12 @@ version = "0.1.0"
 authors = ["Sergey Kiselev <kiselev.sg@gmail.com>"]
 edition = "2018"
 
+[profile.dev]
+rpath = true
+
+[profile.release]
+rpath = true
+
 [build-dependencies]
 bindgen = "~0.59"
 
